@@ -28,6 +28,12 @@ router.get('/', (request, response) => {
     response.sendFile(path.join(__dirname, '../frontend/html/index.html'));
 });
 
+//az első paraméter az urlben az elérhetőség
+router.get('/asd', (request, response) => {
+    response.sendFile(path.join(__dirname, '../frontend/html/bruno.html'));
+    //sendfile az visszaadja az útvonalban meghatározott fájlt
+});
+
 //!API endpoints
 app.use('/', router);
 const endpoints = require('./api/api.js');
