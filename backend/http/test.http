@@ -1,0 +1,14 @@
+###
+GET http://127.0.0.1:3000/api/brunokiraly
+
+###
+GET http://127.0.0.1:3000/api/pokay/asd/asd2
+
+###
+POST http://127.0.0.1:3000/api/data
+content-type: application/json
+{
+    "name": "Marcell",
+    "age": 13,
+    "gender": "Kombájn"
+}
